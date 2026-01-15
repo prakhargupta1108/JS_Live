@@ -1,0 +1,84 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url("Img.png");
+}
+
+.box {
+  background: white;
+  padding: 40px;
+  border-radius: 25px;
+  text-align: center;
+  width: 340px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  animation: fadeIn 1.5s ease;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+}
+
+h1 {
+  color: #ff4d6d;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #333;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+button {
+  padding: 12px 28px;
+  margin: 10px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:first-child {
+  background: #ff4d6d;
+  color: white;
+}
+
+#noBtn {
+  background: #ddd;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+
+/* Love Blaster Hearts */
+.heart {
+  position: fixed;
+  bottom: 50%;
+  font-size: 24px;
+  animation: blast 2s ease-out forwards;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes blast {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(
+      calc(-200px + 400px * var(--x)),
+      -350px
+    ) scale(2);
+    opacity: 0;
+  }
+}
+
