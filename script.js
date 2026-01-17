@@ -1,15 +1,22 @@
 let step = 1;
+
 const question = document.getElementById("question");
 const noBtn = document.getElementById("noBtn");
+const music = document.getElementById("bgMusic"); // 🎵 music reference
 
 function yesClick() {
+  // ▶️ Play music on first user interaction
+  if (music.paused) {
+    music.play();
+  }
+
   if (step === 1) {
-    question.innerText = "Would you like to go out with me sometime, Khushi? 💕";
+    question.innerText = "Would you like to go out with me sometime, Neha? 💕";
     step = 2;
   } else {
     question.innerText = "Yayyy! You just made my day 😍💖";
     noBtn.style.display = "none";
-    loveBlaster(); // 💥 LOVE BLASTER HERE
+    loveBlaster(); // 💥 LOVE BLASTER
   }
 }
 

@@ -2,34 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>For Khushi ❤️</title>
+  <title>Neha ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Background Music -->
-  <audio autoplay loop>
-    <source src="song.mp3" type="audio/mpeg">
+  <audio id="bgMusic" loop>
+    <source src="Perfect-(Mr-Jat.in).mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
   </audio>
 
-  <!-- Floating Hearts -->
+  <!-- Floating Hearts Container -->
   <div class="hearts"></div>
 
+  <!-- Main Box -->
   <div class="box">
-    <img src="khushi.jpg" class="photo" alt="Khushi">
-
-    <h1>Khushi 💖</h1>
+    <h1>Neha 💖</h1>
     <h2 id="question">Do you like surprises? 😊</h2>
 
     <div class="buttons">
-      <!-- <button onclick="yesClick()">Yes 💕</button>
-      <button id="noBtn" onclick="noClick()">No 😐</button> -->
       <button type="button" onclick="yesClick()">Yes 💕</button>
-<button type="button" id="noBtn" onclick="noClick()">No 😐</button>
-
+      <button type="button" id="noBtn" onclick="noClick()">No 😐</button>
     </div>
+
+    <p class="hint">Tap Yes to start the surprise 🎶</p>
   </div>
 
   <script src="script.js"></script>
+
 </body>
 </html>
